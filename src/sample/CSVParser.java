@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CSVParser {
 
-    private static final char DEFAULT_SEPARATOR = ',';
+    private static final char DEFAULT_SEPARATOR = ';';
     private static final char DEFAULT_QUOTE = '"';
 
     public static List<String> parseLine(String cvsLine) {

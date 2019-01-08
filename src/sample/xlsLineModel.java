@@ -17,4 +17,6 @@ public class xlsLineModel {
     }
 
     public int ILOSC = 0;
+
+    public String OBUDOWA;
 }

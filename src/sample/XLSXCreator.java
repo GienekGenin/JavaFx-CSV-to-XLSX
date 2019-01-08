@@ -10,9 +10,9 @@ import java.util.HashSet;
 
 class XLSXCreator {
 
-    static void newWorkSheet(HashSet<String> vendorKeys, HashMap<String, xlsLineModel> hmap) {
+    static void newWorkSheet(HashSet<String> vendorKeys, HashMap<String, ProductModel> hmap) {
         try {
-            String filename = "D:\\Bitstream\\test.xls";
+            String filename = "U:\\public_r\\dpietrzyk\\chiron\\vendo_bom_przygotowanie\\z programu cad\\catalog.xls";
             HSSFWorkbook workbook = new HSSFWorkbook();
             HSSFSheet sheet = workbook.createSheet("Catalog");
             HSSFRow rowhead = sheet.createRow((short) 0);
@@ -29,7 +29,7 @@ class XLSXCreator {
             int cnt = 0;
             for (String key : vendorKeys) {
                 cnt += 1;
-                xlsLineModel towarInfo = hmap.get(key);
+                ProductModel towarInfo = hmap.get(key);
                 String kody = "";
                 for (String KOD : towarInfo.KODTOWARU) {
                     kody += KOD + ",";

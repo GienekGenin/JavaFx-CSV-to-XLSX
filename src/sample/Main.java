@@ -6,14 +6,13 @@ import javafx.stage.Stage;
 
 import java.io.File;
 
-
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Select CSV file");
-        fileChooser.setInitialDirectory(new File("D:\\Bitstream\\CSV_to_XLSX\\testFiles"));
+        fileChooser.setInitialDirectory(new File("U:\\public_r\\dpietrzyk\\chiron\\vendo_bom_przygotowanie\\z programu cad\\"));
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV Files", "*.bom"));
         File selectedFile = fileChooser.showOpenDialog(primaryStage);
 

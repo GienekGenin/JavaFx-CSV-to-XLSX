@@ -12,7 +12,7 @@ class XLSXCreator {
 
     static void newWorkSheet(HashSet<String> vendorKeys, HashMap<String, ProductModel> hmap) {
         try {
-            String filename = "U:\\public_r\\dpietrzyk\\chiron\\vendo_bom_przygotowanie\\z programu cad\\catalog.xls";
+            String filename = "catalog.xls";
             HSSFWorkbook workbook = new HSSFWorkbook();
             HSSFSheet sheet = workbook.createSheet("Catalog");
             HSSFRow rowhead = sheet.createRow((short) 0);

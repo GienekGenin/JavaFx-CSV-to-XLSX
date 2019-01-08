@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Select CSV file");
-        fileChooser.setInitialDirectory(new File("U:\\public_r\\dpietrzyk\\chiron\\vendo_bom_przygotowanie\\z programu cad\\"));
+        fileChooser.setInitialDirectory(new File("U:\\"));
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV Files", "*.bom"));
         File selectedFile = fileChooser.showOpenDialog(primaryStage);
 
